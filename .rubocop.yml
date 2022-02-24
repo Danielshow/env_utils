@@ -11,3 +11,40 @@ Style/StringLiteralsInInterpolation:
 
 Layout/LineLength:
   Max: 120
+
+Metrics/AbcSize:
+  Enabled: true
+  Max: 50
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/ParameterLists:
+  Enabled: true
+  Max: 6
+  Exclude:
+    - 'spec/**/*'
+
+Metrics/BlockLength:
+  Enabled: true
+  Max: 25
+  Exclude:
+    - 'spec/**/*'
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: true
+  Max: 15
+
+Metrics/PerceivedComplexity:
+  Enabled: true
+  Max: 15
+
+Metrics/ModuleLength:
+  Enabled: true
+  Max: 150

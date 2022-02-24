@@ -2,8 +2,13 @@
 
 require_relative "env_utils_ruby/version"
 
+# EnvUtilsRuby is a library for getting environment variables.
 module EnvUtilsRuby
   class Error < StandardError; end
+
+  # Get the value of an environment variable.
+  # @param [String] name the name of the environment variable
+  # @return [String, nil] the value of the environment variable, or nil if it is not set
 
   def get_env_var(key, options = {})
     fallback = ENV["RAILS_ENV"] == "development" ? options[:dev_default] : nil
