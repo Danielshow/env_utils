@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    env_utils_ruby (0.1.2)
+    env_utils_ruby (0.1.3)
 
 GEM
   remote: https://rubygems.org/
@@ -44,6 +44,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   env_utils_ruby!
