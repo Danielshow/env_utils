@@ -1,4 +1,4 @@
-# Env::Utils::Ruby
+# EnvUtilsRuby
 
 Easily Get Environment Variables. This is the ruby-like version of [env-utils](https://github.com/BolajiOlajide/env-utils)
 
