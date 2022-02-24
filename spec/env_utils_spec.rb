@@ -1,7 +1,7 @@
-require "env_utils_ruby"
+require "env_utils"
 
-RSpec.describe EnvUtilsRuby do
-  include EnvUtilsRuby
+RSpec.describe EnvUtils do
+  include EnvUtils
   describe ".get_env_var" do
     it "returns nil if the env var is not set" do
       expect(get_env_var("NOT_SET")).to be_nil

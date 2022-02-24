@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require_relative "env_utils_ruby/version"
+require_relative "env_utils/version"
 
-# EnvUtilsRuby is a library for getting environment variables.
-module EnvUtilsRuby
+# EnvUtils is a library for getting environment variables.
+module EnvUtils
   class Error < StandardError; end
 
   # Get the value of an environment variable.
