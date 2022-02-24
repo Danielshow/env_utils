@@ -32,7 +32,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   # Uncomment to register a new dependency of your gem
-  spec.add_dependency "dotenv", "~> 2.1"
   spec.add_development_dependency "rubocop", "~> 1.7"
 
   # For more information and examples about making a new gem, checkout our

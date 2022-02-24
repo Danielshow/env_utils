@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## get_env_var
 
-Gets an environment variable. This returns an error if the environment variable isn't detected.
+Gets an environment variable. This returns nil if the environment variable isn't detected.
 
 ```ruby
 include EnvUtilsRuby
@@ -66,15 +66,6 @@ PORT = get_env_var('PORT', { default: '1234' })
 # if ENV["PORT"] is not set, the value of PORT will be `1234`
 ```
 
-- `options.optional` - Used to identify variables that are optional. This is specifically useful when you don't want an error thrown for nil variables.
-
-```ruby
-SOMETHING = get_env_var('SOMETHING', { optional: true })
-
-# if SOMETHING is nil, the value of SOMETHING will be nil.
-#  else it'll be whatever the value of SOMETHING is
-```
-
 - `options.is_integer` - used to convert numeric-like variables into integer. Note: This will return 0 if value is not numeric-like.
 
 ```ruby
@@ -108,7 +99,7 @@ get_string_env('SENTRY_DSN') # will always return a string | undefined
 
 N.B All utility functions have exactly the same signature as the `get_env_var` function.
 
-- `get_String_env` returns an environment variable as a string
+- `ENV` returns an environment variable as a string
 - `get_array_env` returns an environment variable as an array
 - `get_bool_env` returns an environment variable as a boolean
 - `get_integer_env` returns an environment variable as an integer
